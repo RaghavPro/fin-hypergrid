@@ -2210,7 +2210,7 @@ Hypergrid.prototype = {
         var hMax = Math.max(0, numColumns - numFixedColumns - lastPageColumnCount);
         this.setHScrollbarValues(hMax);
 
-        var vMax = 1 + Math.max(0, numRows - numFixedRows - lastPageRowCount);
+        var vMax = Math.max(0, numRows - numFixedRows - lastPageRowCount);
         this.setVScrollbarValues(vMax);
 
         this.setHScrollValue(Math.min(this.getHScrollValue(), hMax));
